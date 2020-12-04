@@ -5,6 +5,9 @@ import Link from 'gatsby-link'
 
 import '../style/index.scss'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
+
 const Layout = ({ children, site }) => (
   <div>
     <Helmet title="Snipcart + DatoCMS + GatsbyJS Example" />
@@ -19,7 +22,7 @@ const Layout = ({ children, site }) => (
             </h1>
             <div className="Header__summary snipcart-summary snipcart-checkout">
               <div className="Header__summary__title">
-                🛍 MY CART 🛍
+                <FontAwesomeIcon icon={faShoppingBag} size="3x" />
               </div>
               <div className="Header__summary__line">
                 Number of items: <span className="snipcart-total-items"></span>

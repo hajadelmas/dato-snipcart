@@ -1,9 +1,15 @@
+$bg-color: #f3f3f3;
+$shadow-color: darken( $bg-color, 25%);
+
+
 .Catalogue {
   margin: 16vh 0;
 }
 
 .Catalogue__item {
   margin-bottom: 60px;
+  box-shadow: 8px 12px 30px $shadow-color;
+  padding: 10px;
 }
 
 @media screen and (min-width: 600px) {
@@ -26,6 +32,6 @@
   }
 
   .Catalogue__item {
-    width: 28%;
+    width: 30%;
   }
 }
