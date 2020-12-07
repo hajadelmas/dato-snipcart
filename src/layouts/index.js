@@ -10,7 +10,9 @@ import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 
 const Layout = ({ children, site }) => (
   <div>
-    <Helmet title="Snipcart + DatoCMS + GatsbyJS Example" />
+    <Helmet title="Snipcart + DatoCMS + GatsbyJS Example">
+      <html lang="fr" />
+    </Helmet>
     <div className="Container">
       <div className="Header">
         <div className="Wrap" >
